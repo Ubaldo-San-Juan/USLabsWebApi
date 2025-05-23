@@ -1,0 +1,40 @@
+# === Archivos y carpetas específicos del proyecto ===
+# Ignorar bin/ y obj/ del proyecto WebApi
+src/USLabs.WebApi/bin/*
+src/USLabs.WebApi/obj/*
+
+src/USLabs.Domain/bin/*
+src/USLabs.Domain/obj/*
+
+src/USLabs.Persistence/bin/*
+src/USLabs.Persistence/obj/*
+
+
+# Ignorar archivos de usuario (VS/Rider)
+src/USLabs.WebApi/*.user
+src/USLabs.WebApi/*.suo
+
+# Ignorar configuraciones locales de desarrollo
+src/USLabs.WebApi/appsettings.Development.json
+
+# === Carpetas de IDEs/Editors ===
+# Visual Studio
+.vs/
+*.vscode/
+
+# Rider/IntelliJ
+.idea/
+
+# === Archivos generados ===
+*.DS_Store
+*.cache
+*.log
+*.tmp
+*.nupkg
+
+# === Dependencias ===
+# Paquetes NuGet locales (opcional)
+packages/
+
+# Rider solution DotSettings user file
+src/USLabs.webapi.sln.DotSettings.user
