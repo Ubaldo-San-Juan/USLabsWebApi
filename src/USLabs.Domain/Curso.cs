@@ -9,5 +9,8 @@ namespace USLabs.Domain
     {
         public string? Nombre { get; set; }
         public string? Descripcion { get; set; }
+
+        // Navigation properties
+        public ICollection<Calificacion>? Calificaciones { get; set; }
     }
 }
