@@ -18,5 +18,7 @@ namespace USLabs.Domain
 
         public ICollection<Instructor>? Instructores { get; set; }
         public ICollection<CursoInstructor>? CursoInstructores { get; set; }
+
+        public ICollection<Photo>? Fotos { get; set; }
     }
 }
