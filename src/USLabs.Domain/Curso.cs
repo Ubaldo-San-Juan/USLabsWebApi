@@ -12,5 +12,8 @@ namespace USLabs.Domain
 
         // Navigation properties
         public ICollection<Calificacion>? Calificaciones { get; set; }
+
+        public ICollection<Precio>? Precios { get; set; }
+        public ICollection<CursoPrecio>? CursoPrecios { get; set; }
     }
 }
