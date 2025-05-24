@@ -10,5 +10,9 @@ namespace USLabs.Domain
         public string? Nombre { get; set; }
         public decimal PrecioActual { get; set; }
         public decimal PrecioPromocion { get; set; }
+
+        // Navigation properties
+        public ICollection<Curso>? Cursos { get; set; }
+        public ICollection<CursoPrecio>? CursoPrecios { get; set; }
     }
 }

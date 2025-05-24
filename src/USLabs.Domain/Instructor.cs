@@ -10,5 +10,11 @@ namespace USLabs.Domain
         public string? Apellidos { get; set; }
         public string? Nombre { get; set; }
         public string? Grado { get; set; }
+
+        // Navigation properties
+        public ICollection<Curso>? Cursos { get; set; }
+        public ICollection<CursoInstructor>? CursoInstructores { get; set; }
+
+        
     }
 }

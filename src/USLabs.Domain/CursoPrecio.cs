@@ -5,14 +5,13 @@ using System.Threading.Tasks;
 
 namespace USLabs.Domain
 {
-    public class Calificacion : BaseEntity
+    public class CursoPrecio
     {
-        public string? Alumno { get; set; }
-        public int Puntaje { get; set; }
-        public string? Comentario { get; set; }
-
-        // Foreign Key
+        // Foreign keys
         public Guid CursoId { get; set; }
         public Curso? Curso { get; set; }
+
+        public Guid PrecioId { get; set; }
+        public Precio? Precio { get; set; }
     }
 }
