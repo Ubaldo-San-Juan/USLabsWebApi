@@ -7,7 +7,6 @@ namespace USLabs.Persistence
 {
     public class USLabsDbContext : DbContext
     {
-
         // Declaration of DbSets for each entity as properties
         public DbSet<Curso> Cursos { get; set; }
         public DbSet<Instructor> Instructores { get; set; }
