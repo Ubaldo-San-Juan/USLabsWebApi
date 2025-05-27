@@ -1,11 +1,13 @@
 using Bogus;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using USLabs.Domain;
+using USLabs.Persistence.Models;
 
 namespace USLabs.Persistence
 {
-    public class USLabsDbContext : DbContext
+    public class USLabsDbContext : IdentityDbContext<AppUser>
     {
         // Declaration of DbSets for each entity as properties
         public DbSet<Curso> Cursos { get; set; }
