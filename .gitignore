@@ -8,6 +8,7 @@ src/USLabs.Domain/obj/*
 
 src/USLabs.Persistence/bin/*
 src/USLabs.Persistence/obj/*
+src/USLabs.Persistence/LocalDatabase.db
 
 
 # Ignorar archivos de usuario (VS/Rider)

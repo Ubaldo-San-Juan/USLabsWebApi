@@ -7,8 +7,10 @@ namespace USLabs.Domain
 {
     public class Curso : BaseEntity
     {
-        public string? Nombre { get; set; }
+        public string? Titulo { get; set; }
         public string? Descripcion { get; set; }
+        public DateTime? FechaPublicacion { get; set; }
+
 
         // Navigation properties
         public ICollection<Calificacion>? Calificaciones { get; set; }

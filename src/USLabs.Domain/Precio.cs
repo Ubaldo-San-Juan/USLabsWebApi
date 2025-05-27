@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace USLabs.Domain
 {
-    public class Precio
+    public class Precio : BaseEntity
     {
         public string? Nombre { get; set; }
         public decimal PrecioActual { get; set; }
