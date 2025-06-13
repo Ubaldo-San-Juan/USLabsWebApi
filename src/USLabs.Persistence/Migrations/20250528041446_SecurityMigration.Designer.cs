@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using USLabs.Persistence;
 
@@ -10,9 +11,11 @@ using USLabs.Persistence;
 namespace USLabs.Persistence.Migrations
 {
     [DbContext(typeof(USLabsDbContext))]
-    partial class USLabsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250528041446_SecurityMigration")]
+    partial class SecurityMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.16");
