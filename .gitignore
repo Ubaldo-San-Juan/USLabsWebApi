@@ -10,6 +10,8 @@ src/USLabs.Persistence/bin/*
 src/USLabs.Persistence/obj/*
 src/USLabs.Persistence/LocalDatabase.db
 
+src/USLabs.Application/bin/*
+src/USLabs.Application/obj/*
 
 # Ignorar archivos de usuario (VS/Rider)
 src/USLabs.WebApi/*.user
